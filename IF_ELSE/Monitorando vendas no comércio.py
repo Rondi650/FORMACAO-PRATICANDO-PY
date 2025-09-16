@@ -2,7 +2,6 @@
 
 # Crie um programa que receba o número de vendas dos dois produtos e exiba uma mensagem indicando qual deles vendeu mais. Se as quantidades forem iguais, exiba uma mensagem dizendo que houve empate.
 
-
 macas = int(input('Digite a quantidade de macas vendidas: '))
 bananas = int(input('Digite a quantidade de bananas venvidas: '))
 
