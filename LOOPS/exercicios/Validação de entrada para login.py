@@ -42,7 +42,7 @@ while True:
     while True:
         senha = str(input('Digite sua senha: '))
         if len(senha) < 3:
-            print('A senha deve ter pelo menos 8 caracteres.') 
+            print('A senha deve ter pelo menos 3 caracteres.') 
             continue
         
         confirmar_senha = str(input('Confirme sua senha: '))
