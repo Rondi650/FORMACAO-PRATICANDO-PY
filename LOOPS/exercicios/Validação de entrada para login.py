@@ -33,16 +33,30 @@
 
 '''SOLUCAO WHILE TRUE'''
 
+import os
+
+tentativas = 0
+tentativas_senha = 0
+cadastro_completo = False
+
 while True:
     usuario = str(input('\n' + 'Digite o nome de usuario: '))
     if len(usuario) < 5:
         print('O nome de usuario deve ter pelo menos 5 caracteres.')
+        tentativas +=1
+        if tentativas >= 3:
+            print(f'Tentativas esgotadas {tentativas}')
+            break
         continue
     
     while True:
         senha = str(input('Digite sua senha: '))
         if len(senha) < 3:
             print('A senha deve ter pelo menos 3 caracteres.') 
+            tentativas_senha += 1
+            if tentativas_senha >= 3:
+                print(f'Tentativas esgotadas {tentativas_senha}')
+                break
             continue
         
         confirmar_senha = str(input('Confirme sua senha: '))
@@ -50,8 +64,12 @@ while True:
             print('As senhas devem coincidir')
             continue
         
+        cadastro_completo = True
         break
     
     break
 
-print('\n' + 'Cadastro realizado com sucesso.' + '\n' f'Bem vindo {usuario}!' + '\n')
+if cadastro_completo:
+    print('\n' + 'Cadastro realizado com sucesso.' + '\n' f'Bem vindo {usuario}!' + '\n')
+else:
+    print('Cadastro não foi concluído.')
