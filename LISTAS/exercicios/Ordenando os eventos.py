@@ -60,8 +60,8 @@ if __name__ == "__main__":
     main()
     
     
-'''SOLUCAO ALURA'''
-eventos_registrados = ['Encerramento', 'Palestra 3', 'Palestra 2', 'Abertura']
+# '''SOLUCAO ALURA'''
+# eventos_registrados = ['Encerramento', 'Palestra 3', 'Palestra 2', 'Abertura']
 
-eventos_registrados.reverse()
-print(f"Ordem corrigida: {eventos_registrados}")
+# eventos_registrados.reverse()
+# print(f"Ordem corrigida: {eventos_registrados}")
