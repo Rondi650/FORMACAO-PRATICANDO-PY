@@ -6,6 +6,7 @@ def limpar_texto(texto_digitado):
     caracteres =  ",.!|?;:\"'_-()[]{}#"
     for char in caracteres:
         texto_digitado = texto_digitado.replace(char,'')
+        print(texto_digitado)
     return texto_digitado
         
 def contar_palavras(frase):
